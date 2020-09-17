@@ -22,25 +22,6 @@ header:last-child {
     width: 400px;
 }
 
-nav{
-    width: 100%;
-    padding-right: calc(8rem + 15px);
-}
-nav ul li{
-    display: inline;
-    padding: 0 5px;
-}
-nav ul li a{
-    display: inline;
-    color: #000000;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover{
-    display: inline;
-    color: var(--btn-active);
-}
-
 .active{
     color: var(--btn-active);
     border-bottom: 3px solid var(--btn-active);

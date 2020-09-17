@@ -11,6 +11,7 @@
     padding: 0;
     text-decoration: none;
     list-style-type: none;
+    box-sizing: border-box;
 }
 
 body,
@@ -19,4 +20,24 @@ button,
 textarea {
   font: 500 1.6rem Montserrat, 'sans-serif';
   color: var(--color-text-base);
+}
+
+.c-white {
+  color: #FFFFFF !important;
+}
+
+.c-cinze {
+  color: #939393 !important;
+}
+
+article {
+  display: flex;
+}
+
+.portal-item {
+  flex: 1;
+}
+
+.portal-item p {
+  margin-bottom: 15px;
 }

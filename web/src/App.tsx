@@ -1,6 +1,6 @@
 import React from 'react';
 import './assets/global.css';
-import Content from './components/Content';
+import Content from './pages/one';
 import Header from './components/Header';
 
 function App() {

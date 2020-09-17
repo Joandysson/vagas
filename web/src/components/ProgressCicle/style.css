@@ -1,0 +1,104 @@
+.percent {
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+.percent svg {
+    transform: rotate(-90deg);
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+.percent svg circle {
+    width: 70px;
+    height: 70px;
+    fill: none;
+    stroke-width: 5.5;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 176;
+    stroke-dashoffset: 176;
+}
+
+.percent svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: #969696
+}
+
+/* .percent svg circle:nth-child(2) {
+    stroke-dashoffset: calc(251 - (251 * 50)/ 100);
+    stroke: #03a9f4
+} */
+
+.percent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+}
+
+.percent .number h2 {
+    font-size: 1.8rem;
+}
+
+.perc-10 {
+    stroke-dashoffset: calc(176 - (176 * 10)/ 100) !important;
+}
+
+.perc-20 {
+    stroke-dashoffset: calc(176 - (176 * 20)/ 100) !important;
+}
+
+.perc-30 {
+    stroke-dashoffset: calc(176 - (176 * 30)/ 100) !important;
+}
+
+.perc-40 {
+    stroke-dashoffset: calc(176 - (176 * 40)/ 100) !important;
+}
+
+.perc-50 {
+    stroke-dashoffset: calc(176 - (176 * 50)/ 100) !important;
+}
+
+.perc-60 {
+    stroke-dashoffset: calc(176 - (176 * 60)/ 100) !important;
+}
+
+.perc-70 {
+    stroke-dashoffset: calc(176 - (176 * 70)/ 100) !important;
+}
+
+.perc-80 {
+    stroke-dashoffset: calc(176 - (176 * 80)/ 100) !important;
+}
+
+.perc-90 {
+    stroke-dashoffset: calc(176 - (176 * 90)/ 100) !important;
+}
+
+.perc-100 {
+    stroke-dashoffset: calc(176 - (176 * 100)/ 100) !important;
+}
+
+.stroker-red {
+    stroke: var(--btn-active);
+}
+
+.stroker-green {
+    stroke: #34d293;
+}
+
+.stroker-yellow {
+    stroke: #f7d861;
+}
+
+.stroker-blue {
+    stroke: #3ab0e2;
+}

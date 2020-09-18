@@ -12,6 +12,7 @@
     text-decoration: none;
     list-style-type: none;
     box-sizing: border-box;
+    outline: none;
 }
 
 body,
@@ -30,14 +31,10 @@ textarea {
   color: #939393 !important;
 }
 
-article {
-  display: flex;
+.text-justify {
+  text-align: justify;
 }
 
-.portal-item {
-  flex: 1;
-}
-
-.portal-item p {
-  margin-bottom: 15px;
+.line-height-1{
+  line-height: 1.7 !important;
 }

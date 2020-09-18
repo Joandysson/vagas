@@ -6,6 +6,8 @@ import { AiFillAppstore, AiFillDatabase } from 'react-icons/ai';
 import { FaCloudUploadAlt } from 'react-icons/fa';
 import ProgressCicle from '../../components/ProgressCicle';
 import './style.css';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 interface servicesObj {
   name: string;
@@ -25,6 +27,7 @@ interface portalObj {
 function Content() {
   return (
     <>
+    <Header />
     <main>
       <div className="container">
         <div className="header">
@@ -62,43 +65,69 @@ function Content() {
           </ul>
         </div>
       </div>
-    </main>
-
-    <main className="portal">
-      <div className="container">
-        <div className="header">
-          <div className="title-content c-white">
-            O PORTAL
+      <article className="portal">
+        <div className="container">
+          <div className="header">
+            <div className="title-content c-white">
+              O PORTAL
+            </div>
+            <div className="description-content c-white">
+              Nosso objetivo é levar o município até você.
+            </div>
           </div>
-          <div className="description-content c-white">
-            Nosso objetivo é levar o município até você.
-          </div>
+        <section className="section-portal">
+            <div className="portal-item ">
+              <h3 className="c-white portal-font line-height-1">
+                Soluções para o Cidadão, o Contribuinte e o Servidor.
+              </h3>
+            </div>
+            <div className="portal-item portal-item-margin portal-description text-justify c-cinze">
+              <p className="line-height-1">É um portal que tem como principal objetivo atender as necessidades dos cidadãos, assim como disponibilizar recursos exclusivos para contribuintes e servidores.</p>
+              <p className="line-height-1">Aqui você encontrará informações das contas de receitas e despesas do seu município, além disso, você poderá acompanhá-las através de indicadores gerenciais.</p>
+            </div>
+            <div className="portal-items-cicle">
+              {portal.map((prop:portalObj, key) => (
+                <div className="portal-item-cicle text-justify" key={key}>
+                  <div className="box">
+                    <ProgressCicle percentual={`${prop.percentual}0`} color={prop.color} percentualInfo={prop.percentual} />
+                  </div>
+                  <div>
+                    <h6 className="c-white portal-item-title">{prop.name}</h6>
+                    <p className="portal-description line-height-1 c-cinze">{prop.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+        </section>
         </div>
-      <article>
-          <div className=" c-white ">
-            Soluções para o Cidadão, o Contribuinte e o Servidor.
-          </div>
-          <div className=" c-cinze">
-            <p>É um portal que tem como principal objetivo atender as necessidades dos cidadãos, assim como disponibilizar recursos exclusivos para contribuintes e servidores.</p>
-            <p>Aqui você encontrará informações das contas de receitas e despesas do seu município, além disso, você poderá acompanhá-las através de indicadores gerenciais.</p>
-          </div>
-          <div className="portal-items">
-            {portal.map((prop:portalObj, key) => (
-              <div className="portal-item" key={key}>
-                <div className="box">
-                  <ProgressCicle percentual={`${prop.percentual}0`} color={prop.color} percentualInfo={prop.percentual} />
-                </div>
-                <div>
-                  <h6 className="c-white">{prop.name}</h6>
-                  <p className="c-cinze">{prop.description}</p>
-                </div>
-              </div>
-
-            ))}
-          </div>
       </article>
-      </div>
+      <article className="form">
+        <div className="container">
+          <div className="form-info">
+            <h4 className="c-white">FALE CONOSCO</h4>
+            <p className="c-white">Envie sua sugestão, crítica ou elogio para seu município.</p>
+          </div>
+          <form action="">
+            <div className="form-input">
+              <div className="input">
+                <input type="text" name="name" id="name" placeholder="Nome"/>
+              </div>
+              <div className="input">
+                <input type="text" name="email" id="email"  placeholder="E-mail"/>
+              </div>
+              <div className="input">
+                <input type="text" name="phone" id="phone" placeholder="Telefone"/>
+              </div>
+            </div>
+            <div className="textarea">
+              <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+            </div>
+            <button>Enviar</button>
+          </form>
+        </div>
+      </article>
     </main>
+    <Footer />
     </>
   );
 }

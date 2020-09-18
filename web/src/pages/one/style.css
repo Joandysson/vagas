@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 main {
     width: 100%;
     display: flex;
@@ -15,7 +17,6 @@ main {
     height: auto;
 }
 
-
 .container {
     width: calc(100vw - calc(16rem + 40px));
     height: auto;
@@ -23,7 +24,7 @@ main {
 
 .container .header {
     height: 20vh;
-    margin-top: 3rem;
+    margin-top: 8rem;
 }
 
 .title-content {
@@ -86,9 +87,47 @@ main {
     float: left;
 }
 .portal-item {
+    width: 34%;
+}
+
+.portal-item-margin {
+    margin: 0 4%;
+}
+
+.section-portal {
+    display: flex;
+  }
+
+  .portal-item {
+    flex: 1;
+  }
+
+  .portal-item p {
+    margin-bottom: 15px;
+  }
+
+
+.portal-font {
+    font: 300 5rem 'Lato', sans-serif;
+    text-align: end;
+}
+
+.portal-items-cicle {
+    width: 28%
+}
+
+.portal-item-cicle {
     display: block;
     min-height: 70px;
     margin-bottom: 25px;
+}
+
+.portal-description{
+    font: 500 1.4rem Montserrat;
+}
+
+.portal-item-title{
+    font: 600 1.8rem Montserrat;
 }
 
 .border-red {
@@ -147,4 +186,73 @@ main {
 .main-services li {
     display: inline;
     padding: 0 5px;
+}
+
+.form {
+    width: 100%;
+    background: #808080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.form form {
+    margin-bottom: 20px;
+}
+
+
+.form form .form-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form form .input {
+    width: 32%;
+}
+
+.form-info {
+    text-align: center;
+    margin: 0 0px 80px 0;
+}
+
+.form-info h4{
+    font-size: 5rem;
+}
+
+.form form input , .form form textarea {
+    border-radius: 3px;
+}
+
+.form form input, .form form textarea{
+    width: 100%;
+    padding: 6px 12px;
+    border: solid 2px white;
+}
+
+.form form input:focus, .form form textarea:focus {
+    border-color: #0c158d9d;
+}
+
+.form form .textarea {
+    width: 100%;
+}
+
+.form form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form form button {
+    color: #FFF;
+    background: #FC6D6D;
+    padding: 13px 35px 13px 35px;
+    border-radius: 4px;
+    float: right;
+    transition: 0.5s;
+}
+
+.form form button:hover {
+    background: #cb4332;
 }

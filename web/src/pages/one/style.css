@@ -16,12 +16,6 @@ main {
     background: #272727;
     height: auto;
 }
-
-.container {
-    width: calc(100vw - calc(16rem + 40px));
-    height: auto;
-}
-
 .container .header {
     height: 20vh;
     margin-top: 8rem;
@@ -56,8 +50,8 @@ main {
 .icon-service {
     display: flex;
     border: 10px solid #ececec;
-    width: 100px;
-    height: 100px;
+    width: 145px;
+    height: 145px;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -66,7 +60,7 @@ main {
 }
 
 .icon-service img {
-    width: 4.5rem;
+    width: 5.8rem;
 }
 
 .title-service {
@@ -255,4 +249,53 @@ main {
 
 .form form button:hover {
     background: #cb4332;
+}
+
+@media(max-width: 950px) {
+
+    .services {
+        flex-direction: column;
+    }
+    .service {
+        width: 100%;
+    }
+    .section-portal {
+        flex-direction: column;
+    }
+    .portal-item{
+        width: 100%;
+    }
+    .portal-font {
+        font-size: 4rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .portal-items-cicle {
+        width: 100%;
+    }
+
+    .portal-description {
+        margin-bottom: 20px;
+    }
+    .form form .form-input {
+        flex-direction: column;
+    }
+    .form form .input {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .portal-item-margin{
+        margin: 0 0;
+    }
+    .main-services ul {
+        flex-direction: column;
+    }
+    .main-services ul {
+        padding: 8px 0px;
+    }
+
+    .container .header {
+        margin-top: 12rem;
+    }
 }

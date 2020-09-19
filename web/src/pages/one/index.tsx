@@ -8,6 +8,7 @@ import ProgressCicle from '../../components/ProgressCicle';
 import './style.css';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import Menu from '../../components/Menu';
 
 interface servicesObj {
   name: string;
@@ -27,7 +28,7 @@ interface portalObj {
 function Content() {
   return (
     <>
-    <Header />
+    <Header Menu={<Menu />} />
     <main>
       <div className="container">
         <div className="header">

@@ -1,15 +1,20 @@
-header {
-    height: 10vh;
-    box-shadow: 0px 0px 5px 0px #DDDDDD;
+.header-top {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    min-height: 11vh;
+    box-shadow: 0px 3px 5px 0px #ececec;
     display: flex;
     align-items: center;
+    transition: padding 0.5s;
+    background-color: #FFFFFF;
 }
 
-header:first-child {
+.header-top:first-child {
     padding-left: 8rem;
 }
 /*
-header:last-child {
+.header-top:last-child {
     padding-right: calc(8rem + 15px);
 } */
 
@@ -19,6 +24,8 @@ header:last-child {
 
 .title-page {
     font-size: 1.6rem;
+    font-weight: 700;
+    color: #404040;
     width: 400px;
 }
 
@@ -31,4 +38,13 @@ header:last-child {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+@media(max-width: 950px) {
+    .header-top:first-child {
+        padding-left: 0;
+    }
+    .logo{
+        padding: 0 10px;
+    }
 }

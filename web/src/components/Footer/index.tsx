@@ -10,10 +10,20 @@ function Footer() {
       <div className="container">
         <div className="content">
           <div></div>
-          <div className="location" ><ImLocation2/></div>
+          <div className="location" >
+            <ImLocation2 />
+            <div>
+              RUA ABC
+            </div>
+          </div>
           <div></div>
-          <div className="mail"><MdEmail/></div>
-          <div className="phpne"><FaPhoneSquareAlt/></div>
+          <div className="mail"><MdEmail /><div>email@mail.com</div></div>
+          <div className="phpne">
+            <FaPhoneSquareAlt />
+            <div>
+              (79)3211-1964
+          </div>
+          </div>
           <div className="copyright">
             <FaFacebookF />
           ©2016 3Tecnos Tecnologia LTDA

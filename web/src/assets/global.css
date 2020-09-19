@@ -23,6 +23,11 @@ textarea {
   color: var(--color-text-base);
 }
 
+.container {
+  width: calc(100vw - calc(16rem + 40px));
+  height: auto;
+}
+
 .c-white {
   color: #FFFFFF !important;
 }
@@ -37,4 +42,17 @@ textarea {
 
 .line-height-1{
   line-height: 1.7 !important;
+}
+
+@media(max-width: 950px) {
+  .container {
+    width: calc(100vw - calc(4rem));
+    height: auto;
+  }
+}
+
+@media(max-width: 800px) {
+  .p-bottom-45 {
+    padding-bottom: 45px;
+  }
 }

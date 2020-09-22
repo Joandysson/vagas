@@ -25,7 +25,7 @@ interface portalObj {
   percentual: string;
 }
 
-function Content() {
+function One() {
   return (
     <>
     <Header Menu={<Menu />} />
@@ -133,4 +133,4 @@ function Content() {
   );
 }
 
-export default Content;
+export default One;

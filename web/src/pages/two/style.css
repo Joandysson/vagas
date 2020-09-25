@@ -1,0 +1,171 @@
+body {
+    background-color:rgb(238, 238, 238);
+}
+
+.container-two {
+    margin-top: 20vh;
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.container-two:nth-child(1){
+ text-align: left;
+}
+
+.bread-crumb{
+    text-align: right;
+}
+
+.flex-1{
+    flex: 1 1 50%;
+}
+
+.info-two {
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    padding: 10px 15px;
+}
+
+.box-two {
+    margin: 20px 0;
+    width: 100%;
+    border-radius: 15px;
+    border-top: 3px solid #d2d6de;
+    background: #FFFFFF;
+    padding: 15px 50px 20px;
+}
+
+.options {
+    /* margin: 15px 50px 20px; */
+    display: flex;
+    border-bottom: 2px solid rgb(238, 238, 238);
+}
+
+.options div {
+    padding: 5px;
+    width: 180px;
+    text-align: center;
+    border: 2px solid rgb(238, 238, 238);
+    border-bottom: 0;
+    margin-right: 2px;
+    border-radius:  5px 5px 0 0;
+    cursor: pointer;
+    margin-bottom: -2px;
+    background: #FFFFFF;
+}
+
+.search {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.select-search {
+    margin: 0 5px;
+    border-radius: 4px;
+    padding: 5px 5px;
+    border: 2px solid #ccc;
+}
+
+.select-search select {
+    color: #555;
+}
+
+.btn-search {
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.btn-search:hover {
+    background-color:#eea236;
+}
+
+.btn-search svg {
+    fill: #FFFFFF;
+}
+
+.box-table {
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid #DDDDDD;
+    padding: 10px;
+}
+
+div.blueTable {
+    border: 0px solid #DDDDDD;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.divTable.blueTable .divTableCell, .divTable.blueTable .divTableHead {
+    border: 0.5px solid #DDDDDD;
+    padding: 3px 3px;
+}
+
+.divTable.blueTable .divTableBody .divTableCell {
+    font-size: 13px;
+}
+
+.divTable.blueTable .divTableHeading {
+    background: #FFFFFF;
+    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+    border-bottom: 1px solid #444444;
+}
+
+.divTable.blueTable .divTableHeading .divTableHead {
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+    border-left: 1px solid #FFFFFF;
+}
+
+.divTable.blueTable .divTableHeading .divTableHead:first-child {
+    border-left: none;
+}
+
+.blueTable .tableFootStyle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #FFFFFF;
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #FFFFFF 66%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(top, #FFFFFF 0%, #FFFFFF 66%, #FFFFFF 100%);
+    background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 66%, #FFFFFF 100%);
+    border-top: 1px solid #444444;
+}
+.blueTable .tableFootStyle {
+    font-size: 14px;
+}
+.blueTable .tableFootStyle .links {
+    text-align: right;
+}
+.blueTable .tableFootStyle .links a {
+    display: inline-block;
+    background: #DDDDDD;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+.blueTable.outerTableFooter {
+    border-top: none;
+}
+.blueTable.outerTableFooter .tableFootStyle {
+    padding: 3px 5px;
+}
+
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}

@@ -8,7 +8,7 @@ import { FaSearch } from "react-icons/fa";
 function Two() {
   return (
     <>
-      <Header Menu={<h1> Portal do servidor </h1>} />
+      <Header Menu={<h4> Portal do servidor </h4>} />
       <main>
         <div className="container-two">
           <div className="flex-1"> <h4>SERVIDORES</h4></div>

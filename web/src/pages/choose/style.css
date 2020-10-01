@@ -1,0 +1,25 @@
+.choose-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+.btn-link {
+    width: 400px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: black;
+    padding: 20px 5px;
+    margin: 2px 0;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+.btn-link:hover {
+    background-color: #212121;
+}

@@ -92,6 +92,7 @@ body {
 }
 
 .box-table {
+    overflow: auto;
     border-radius: 5px;
     margin: 10px 0;
     border: 1px solid #DDDDDD;
@@ -169,3 +170,14 @@ div.blueTable {
 .divTableHeading { display: table-header-group;}
 .divTableFoot { display: table-footer-group;}
 .divTableBody { display: table-row-group;}
+
+@media(max-width: 632px) {
+    .search {
+        flex-direction: column;
+    }
+}
+@media(max-width: 500px) {
+    .box-two {
+        padding: 15px 10px 20px;
+    }
+}
